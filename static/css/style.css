@@ -1,12 +1,3 @@
-/*
-#! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
-*/
-
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
 *,
 ::before,
 ::after {
@@ -422,55 +413,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box
-} */
-/* *, ::before, ::after {
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-} */
 
 :root {
   --blue-color: #0d6efd;
@@ -530,62 +472,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 
-/* * {
-  box-sizing: inherit;
-} */
-
-
-@-webkit-keyframes spinner {
-  100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-  }
-}
-
-@keyframes spinner {
-  100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-  }
-}
-
-
-body {
-  height: 100%
-}
-
-body::-webkit-scrollbar {
-  width: 8px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to bottom, rgb(240, 45, 197), rgb(66, 126, 255));
-  border-radius: 100rem;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #817b81;
-  border-radius: 100rem;
-}
-
-::-moz-selection {
-  background: rgba(255, 93, 143, .35)
-}
-
-::selection {
-  background: rgba(247, 37, 133, .35)
-}
-
-::-moz-selection {
-  background: rgba(247, 37, 133, .35)
-}
-
-.container {
-  width: 1536px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 .header {
 	height: 120px;
 	background-image: linear-gradient(0, #fe6532, #f53f2d);
@@ -594,7 +480,7 @@ body::-webkit-scrollbar-track {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
+  margin: 0 auto;
 }
 
 .nav-item {
@@ -660,16 +546,83 @@ body::-webkit-scrollbar-track {
   background-color: var(--orange-color);
 }
 
-.search-hints {
-  position: absolute;
-  background-color: var(--cyan-color);
-  width: 100px;
-  top: 120px;
-}
-
 .cart {
   width: 138px;
   text-align: center;
   color: var(--white-color);
   font-size: larger;
 }
+
+.home-page {
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.category {
+  margin: 10px auto;
+  padding: 0px;
+}
+
+.category-header {
+  align-items: center;
+  margin: 5px;
+  padding: 0px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.category-item {
+  box-shadow: 1px 1px 1px 1px #f7fcfc inset;
+}
+
+.category-name {
+  text-align: center;
+}
+
+.flash-sale {
+  margin: 10px auto;
+  padding: 0px;
+}
+
+.flash-sale-header {
+  align-items: center;
+  margin: 5px;
+  padding: 0px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.sale-item {
+  text-align: center;
+}
+
+.sale-img {
+
+}
+
+.sale-price {
+  font-size: 1.5rem;
+  color: var(--red-color);
+}
+
+.sale-sold {
+  display: block;
+  background-color: var(--pink-color);
+  font-size: small;
+  width: 90%;
+  border-radius: 2rem 2rem;
+  color: var(--white-color);
+}
+
+
+
+
+
+
+
+.footer {
+  margin: 25px auto 10px;
+}
+
